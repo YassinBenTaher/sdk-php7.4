@@ -15,7 +15,6 @@
         "react/promise": "^2.8",
         "mashape/unirest-php": "dev-master",
         "guzzlehttp/guzzle": "^6.3.3",
-        "jms/serializer": "^3.12.0",
         "starkbank/ecdsa": "dev-master",
         "querdos/php-ecdh": "dev-master",
         "simplito/elliptic-php": "1.0.7",
