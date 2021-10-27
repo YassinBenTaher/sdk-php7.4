@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '6c749fd06ccdd53bbc2da70ddf712cf3dd5f846d',
+        'reference' => 'dd707cb938025a5d66b9a1f544f4e24b5d46c6bd',
         'name' => 'method/php7-sdk',
         'dev' => true,
     ),
@@ -47,14 +47,12 @@
             'dev_requirement' => false,
         ),
         'guzzlehttp/guzzle' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => '6.5.x-dev',
+            'version' => '6.5.9999999.9999999-dev',
             'type' => 'library',
             'install_path' => __DIR__ . '/../guzzlehttp/guzzle',
-            'aliases' => array(
-                0 => '7.4.x-dev',
-            ),
-            'reference' => '868b3571a039f0ebc11ac8f344f4080babe2cb94',
+            'aliases' => array(),
+            'reference' => 'e8ed4dbf49b260ff129ff0e0400718c3269971bf',
             'dev_requirement' => false,
         ),
         'guzzlehttp/promises' => array(
@@ -69,14 +67,12 @@
             'dev_requirement' => false,
         ),
         'guzzlehttp/psr7' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => '1.x-dev',
+            'version' => '1.9999999.9999999.9999999-dev',
             'type' => 'library',
             'install_path' => __DIR__ . '/../guzzlehttp/psr7',
-            'aliases' => array(
-                0 => '2.1.x-dev',
-            ),
-            'reference' => '9e3511bee5efa86e591fb27efb7a894571c7a244',
+            'aliases' => array(),
+            'reference' => '1afdd860a2566ed3c2b0b4a3de6e23434a79ec85',
             'dev_requirement' => false,
         ),
         'jms/metadata' => array(
@@ -118,7 +114,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '6c749fd06ccdd53bbc2da70ddf712cf3dd5f846d',
+            'reference' => 'dd707cb938025a5d66b9a1f544f4e24b5d46c6bd',
             'dev_requirement' => false,
         ),
         'php-http/async-client-implementation' => array(
@@ -247,12 +243,6 @@
             'reference' => '36fa03d50ff82abcae81860bdaf4ed9a1510c7cd',
             'dev_requirement' => false,
         ),
-        'psr/http-factory-implementation' => array(
-            'dev_requirement' => false,
-            'provided' => array(
-                0 => '1.0',
-            ),
-        ),
         'psr/http-message' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
@@ -377,6 +367,17 @@
             'reference' => '5911fe42c266a5917aef12e45fbd3a640a9e3b18',
             'dev_requirement' => false,
         ),
+        'symfony/polyfill-intl-idn' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-intl-idn',
+            'aliases' => array(
+                0 => '1.23.x-dev',
+            ),
+            'reference' => '749045c69efb97c70d25d7463abba812e91f3a44',
+            'dev_requirement' => false,
+        ),
         'symfony/polyfill-intl-normalizer' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
@@ -397,6 +398,17 @@
                 0 => '1.23.x-dev',
             ),
             'reference' => '11b9acb5e8619aef6455735debf77dde8825795c',
+            'dev_requirement' => false,
+        ),
+        'symfony/polyfill-php72' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-php72',
+            'aliases' => array(
+                0 => '1.23.x-dev',
+            ),
+            'reference' => '9a142215a36a3888e30d0a9eeea9766764e96976',
             'dev_requirement' => false,
         ),
         'symfony/polyfill-php73' => array(

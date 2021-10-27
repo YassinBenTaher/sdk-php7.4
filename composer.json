@@ -14,7 +14,7 @@
         "php-http/curl-client": "^2.0@dev",
         "react/promise": "^2.8",
         "mashape/unirest-php": "dev-master",
-        "guzzlehttp/guzzle": "^7.4@dev",
+        "guzzlehttp/guzzle": "^6.3.3",
         "jms/serializer": "^3.12@dev",
         "starkbank/ecdsa": "dev-master",
         "querdos/php-ecdh": "dev-master",
