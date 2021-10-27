@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'dd707cb938025a5d66b9a1f544f4e24b5d46c6bd',
+        'reference' => 'd8fee9b68d7cd3d39aef928577fc55e1ee287c5c',
         'name' => 'method/php7-sdk',
         'dev' => true,
     ),
@@ -114,7 +114,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'dd707cb938025a5d66b9a1f544f4e24b5d46c6bd',
+            'reference' => 'd8fee9b68d7cd3d39aef928577fc55e1ee287c5c',
             'dev_requirement' => false,
         ),
         'php-http/async-client-implementation' => array(
@@ -452,12 +452,12 @@
             'dev_requirement' => false,
         ),
         'symfony/serializer' => array(
-            'pretty_version' => 'v5.3.8',
-            'version' => '5.3.8.0',
+            'pretty_version' => '5.4.x-dev',
+            'version' => '5.4.9999999.9999999-dev',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/serializer',
             'aliases' => array(),
-            'reference' => 'a877799b1e94f792208bea68295f6675027c92be',
+            'reference' => 'e1f4f558da09386819501ce2923660a5316c9fb0',
             'dev_requirement' => false,
         ),
         'symfony/string' => array(
