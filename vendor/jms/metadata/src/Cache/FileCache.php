@@ -25,7 +25,7 @@ class FileCache implements CacheInterface, ClearableCacheInterface
     public function load(string $class): ?ClassMetadata
     {
         $path = $this->getCachePath($class);
-        if (!file_exists($path)) {
+        if (!is_readable($path)) {
             return null;
         }
 
@@ -34,8 +34,9 @@ class FileCache implements CacheInterface, ClearableCacheInterface
             if ($metadata instanceof ClassMetadata) {
                 return $metadata;
             }
+
             // if the file does not return anything, the return value is integer `1`.
-        } catch (\ParseError $e) {
+        } catch (\Error $e) {
             // ignore corrupted cache
         }
 

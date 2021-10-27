@@ -129,23 +129,27 @@ class ByteString extends AbstractString
         return $chunks;
     }
 
-    public function endsWith(string|iterable|AbstractString $suffix): bool
+    public function endsWith($suffix): bool
     {
-        if ($suffix instanceof AbstractString) {
+        if ($suffix instanceof parent) {
             $suffix = $suffix->string;
-        } elseif (!\is_string($suffix)) {
+        } elseif (\is_array($suffix) || $suffix instanceof \Traversable) {
             return parent::endsWith($suffix);
+        } else {
+            $suffix = (string) $suffix;
         }
 
         return '' !== $suffix && \strlen($this->string) >= \strlen($suffix) && 0 === substr_compare($this->string, $suffix, -\strlen($suffix), null, $this->ignoreCase);
     }
 
-    public function equalsTo(string|iterable|AbstractString $string): bool
+    public function equalsTo($string): bool
     {
-        if ($string instanceof AbstractString) {
+        if ($string instanceof parent) {
             $string = $string->string;
-        } elseif (!\is_string($string)) {
+        } elseif (\is_array($string) || $string instanceof \Traversable) {
             return parent::equalsTo($string);
+        } else {
+            $string = (string) $string;
         }
 
         if ('' !== $string && $this->ignoreCase) {
@@ -163,12 +167,14 @@ class ByteString extends AbstractString
         return $str;
     }
 
-    public function indexOf(string|iterable|AbstractString $needle, int $offset = 0): ?int
+    public function indexOf($needle, int $offset = 0): ?int
     {
-        if ($needle instanceof AbstractString) {
+        if ($needle instanceof parent) {
             $needle = $needle->string;
-        } elseif (!\is_string($needle)) {
+        } elseif (\is_array($needle) || $needle instanceof \Traversable) {
             return parent::indexOf($needle, $offset);
+        } else {
+            $needle = (string) $needle;
         }
 
         if ('' === $needle) {
@@ -180,12 +186,14 @@ class ByteString extends AbstractString
         return false === $i ? null : $i;
     }
 
-    public function indexOfLast(string|iterable|AbstractString $needle, int $offset = 0): ?int
+    public function indexOfLast($needle, int $offset = 0): ?int
     {
-        if ($needle instanceof AbstractString) {
+        if ($needle instanceof parent) {
             $needle = $needle->string;
-        } elseif (!\is_string($needle)) {
+        } elseif (\is_array($needle) || $needle instanceof \Traversable) {
             return parent::indexOfLast($needle, $offset);
+        } else {
+            $needle = (string) $needle;
         }
 
         if ('' === $needle) {
@@ -297,7 +305,7 @@ class ByteString extends AbstractString
         return $str;
     }
 
-    public function replaceMatches(string $fromRegexp, string|callable $to): parent
+    public function replaceMatches(string $fromRegexp, $to): parent
     {
         if ($this->ignoreCase) {
             $fromRegexp .= 'i';
@@ -396,9 +404,9 @@ class ByteString extends AbstractString
         return $chunks;
     }
 
-    public function startsWith(string|iterable|AbstractString $prefix): bool
+    public function startsWith($prefix): bool
     {
-        if ($prefix instanceof AbstractString) {
+        if ($prefix instanceof parent) {
             $prefix = $prefix->string;
         } elseif (!\is_string($prefix)) {
             return parent::startsWith($prefix);

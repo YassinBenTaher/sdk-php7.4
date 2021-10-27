@@ -114,7 +114,10 @@ class PropertyPath implements \IteratorAggregate, PropertyPathInterface
         $this->length = \count($this->elements);
     }
 
-    public function __toString(): string
+    /**
+     * {@inheritdoc}
+     */
+    public function __toString()
     {
         return $this->pathAsString;
     }
@@ -151,6 +154,7 @@ class PropertyPath implements \IteratorAggregate, PropertyPathInterface
      *
      * @return PropertyPathIteratorInterface
      */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return new PropertyPathIterator($this);

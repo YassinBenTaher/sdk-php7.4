@@ -155,9 +155,11 @@ class AnnotationLoader implements LoaderInterface
      */
     public function loadAnnotations(object $reflector): iterable
     {
-        foreach ($reflector->getAttributes() as $attribute) {
-            if (self::KNOWN_ANNOTATIONS[$attribute->getName()] ?? false) {
-                yield $attribute->newInstance();
+        if (\PHP_VERSION_ID >= 80000) {
+            foreach ($reflector->getAttributes() as $attribute) {
+                if (self::KNOWN_ANNOTATIONS[$attribute->getName()] ?? false) {
+                    yield $attribute->newInstance();
+                }
             }
         }
 

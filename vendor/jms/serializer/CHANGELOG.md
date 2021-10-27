@@ -1,5 +1,50 @@
 # Changelog
 
+## [3.15.0](https://github.com/schmittjoh/serializer/tree/3.15.0) (2021-10-14)
+
+**Merged pull requests:**
+
+- allow the groups annotation to use "groups" as parameter name [\#1351](https://github.com/schmittjoh/serializer/pull/1351) ([goetas](https://github.com/goetas))
+- Allow stable PHPStan PHPDoc Parser [\#1346](https://github.com/schmittjoh/serializer/pull/1346) ([mbabker](https://github.com/mbabker))
+- Symfony 6 and DBAL 3 compat [\#1345](https://github.com/schmittjoh/serializer/pull/1345) ([mbabker](https://github.com/mbabker))
+- Proposed fix for serializing custom DateTimeInterface implementations [\#1344](https://github.com/schmittjoh/serializer/pull/1344) ([andrei-dascalu](https://github.com/andrei-dascalu))
+- Allow to add prefix to twig helpers [\#1341](https://github.com/schmittjoh/serializer/pull/1341) ([goetas](https://github.com/goetas))
+- Fix phpstan return type [\#1329](https://github.com/schmittjoh/serializer/pull/1329) ([dgafka](https://github.com/dgafka))
+
+## [3.14.0](https://github.com/schmittjoh/serializer/tree/3.14.0) (2021-08-06)
+
+**Merged pull requests:**
+
+- Avoid duplicate/invalid definitions when loading the php attributes using the annotation driver [\#1340](https://github.com/schmittjoh/serializer/pull/1340) ([goetas](https://github.com/goetas))
+
+## [3.14.0-rc2](https://github.com/schmittjoh/serializer/tree/3.14.0-rc2) (2021-08-06)
+
+**Merged pull requests:**
+
+- run php8 ci on high and low deps [\#1339](https://github.com/schmittjoh/serializer/pull/1339) ([goetas](https://github.com/goetas))
+- php8 attributes are enabled by default on php8 or higher [\#1338](https://github.com/schmittjoh/serializer/pull/1338) ([goetas](https://github.com/goetas))
+- Allow positional php8 attributes [\#1337](https://github.com/schmittjoh/serializer/pull/1337) ([goetas](https://github.com/goetas))
+- Drop Travis [\#1306](https://github.com/schmittjoh/serializer/pull/1306) ([simPod](https://github.com/simPod))
+
+## [3.14.0-rc1](https://github.com/schmittjoh/serializer/tree/3.14.0-rc1) (2021-08-01)
+
+**Merged pull requests:**
+
+- Add PHP attributes support [\#1332](https://github.com/schmittjoh/serializer/pull/1332) ([goetas](https://github.com/goetas))
+- Deprecate `@ReadOnly` annotation in favor of `@ReadOnlyProperty` [\#1333](https://github.com/schmittjoh/serializer/pull/1333) ([mbabker](https://github.com/mbabker))
+
+## [3.13.0](https://github.com/schmittjoh/serializer/tree/3.13.0) (2021-07-05)
+
+**Merged pull requests:**
+
+- Use FilesystemAdapter when possible to fix compatibility with doctrine/cache 2 [\#1328](https://github.com/schmittjoh/serializer/pull/1328) ([rasmustnilsson](https://github.com/rasmustnilsson))
+- Use PsrCachedReader and drop doctrine/cache [\#1327](https://github.com/schmittjoh/serializer/pull/1327) ([simPod](https://github.com/simPod))
+- Check data can be casted before actual casting [\#1317](https://github.com/schmittjoh/serializer/pull/1317) ([scaytrase](https://github.com/scaytrase))
+- Add methods for data\_collector [\#1316](https://github.com/schmittjoh/serializer/pull/1316) ([gam6itko](https://github.com/gam6itko))
+- fix iterable::class that does not exist [\#1315](https://github.com/schmittjoh/serializer/pull/1315) ([Tobion](https://github.com/Tobion))
+- useful error when data is not an object [\#1313](https://github.com/schmittjoh/serializer/pull/1313) ([dbu](https://github.com/dbu))
+- Fix callback-method setup using XmlDriver [\#1310](https://github.com/schmittjoh/serializer/pull/1310) ([curzio-della-santa](https://github.com/curzio-della-santa))
+
 ## [3.12.3](https://github.com/schmittjoh/serializer/tree/3.12.3) (2021-04-25)
 
 **Merged pull requests:**

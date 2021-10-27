@@ -10,7 +10,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "^8.0.7",
+        "php": "^7.4",
         "php-http/curl-client": "^2.0@dev",
         "react/promise": "^2.8",
         "mashape/unirest-php": "dev-master",
@@ -19,13 +19,13 @@
         "starkbank/ecdsa": "dev-master",
         "querdos/php-ecdh": "dev-master",
         "simplito/elliptic-php": "1.0.7",
-        "symfony/serializer": "6.0.x-dev",
-        "symfony/property-access": "6.0.x-dev"
+        "symfony/serializer": "5.3.8",
+        "symfony/property-access": "5.3.8"
     },
     "config": {
         "preferred-install": "dist",
         "platform": {
-            "php": "8.0.7"
+            "php": "7.4"
         }
     },
     "autoload": {
