@@ -5,8 +5,8 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '613d0b04610dc5e825478a39b25597594f281fa4',
-        'name' => 'sdk/php-sdk',
+        'reference' => '6c749fd06ccdd53bbc2da70ddf712cf3dd5f846d',
+        'name' => 'method/php7-sdk',
         'dev' => true,
     ),
     'versions' => array(
@@ -110,6 +110,15 @@
                 0 => '9999999-dev',
             ),
             'reference' => '14aa9aa6919e4b70c59cd20722ac113c0ffeb45b',
+            'dev_requirement' => false,
+        ),
+        'method/php7-sdk' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => '6c749fd06ccdd53bbc2da70ddf712cf3dd5f846d',
             'dev_requirement' => false,
         ),
         'php-http/async-client-implementation' => array(
@@ -290,15 +299,6 @@
             'reference' => 'a9752a861e21c0fe0b380c9f9e55beddc0ed7d31',
             'dev_requirement' => false,
         ),
-        'sdk/php-sdk' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../../',
-            'aliases' => array(),
-            'reference' => '613d0b04610dc5e825478a39b25597594f281fa4',
-            'dev_requirement' => false,
-        ),
         'simplito/bigint-wrapper-php' => array(
             'pretty_version' => '1.0.0',
             'version' => '1.0.0.0',
@@ -352,7 +352,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/options-resolver',
             'aliases' => array(),
-            'reference' => 'cd63dbab0428a47f8576e4e58148aeae2e32e91c',
+            'reference' => '0a1224805d925ee078867ace14f87eb8dd447a1b',
             'dev_requirement' => false,
         ),
         'symfony/polyfill-ctype' => array(

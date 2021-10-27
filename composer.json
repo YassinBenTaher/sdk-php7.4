@@ -1,6 +1,6 @@
 {
-    "name": "sdk/php-sdk",
-    "description": "Composer php sdk",
+    "name": "method/php7-sdk",
+    "description": "Composer php7 sdk",
     "type": "library",
     "authors": [
         {

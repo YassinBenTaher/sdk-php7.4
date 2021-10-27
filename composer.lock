@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8cddf9b1f77e356c87b9345dc4c91857",
+    "content-hash": "c7d4474e86af75fbf4b0c8f90d651ac5",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -1884,12 +1884,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "cd63dbab0428a47f8576e4e58148aeae2e32e91c"
+                "reference": "0a1224805d925ee078867ace14f87eb8dd447a1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/cd63dbab0428a47f8576e4e58148aeae2e32e91c",
-                "reference": "cd63dbab0428a47f8576e4e58148aeae2e32e91c",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/0a1224805d925ee078867ace14f87eb8dd447a1b",
+                "reference": "0a1224805d925ee078867ace14f87eb8dd447a1b",
                 "shasum": ""
             },
             "require": {
@@ -1945,7 +1945,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-09T08:06:01+00:00"
+            "time": "2021-10-27T13:14:56+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
