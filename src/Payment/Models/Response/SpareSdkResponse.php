@@ -6,15 +6,15 @@ namespace Payment\Models\Response;
 
 class SpareSdkResponse
 {
-    public string $error;
-    public  mixed $data;
-    public  mixed $meta;
+    public  $error;
+    public   $data;
+    public   $meta;
 
 
     /**
      * @return string
      */
-    public function getError(): string
+    public function getError()
     {
         return $this->error;
     }
@@ -22,7 +22,7 @@ class SpareSdkResponse
     /**
      * @param string $error
      */
-    public function setError(string $error): void
+    public function setError( $error)
     {
         $this->error = $error;
     }
@@ -30,7 +30,7 @@ class SpareSdkResponse
     /**
      * @return mixed
      */
-    public function getData(): mixed
+    public function getData()
     {
         return $this->data;
     }
@@ -38,7 +38,7 @@ class SpareSdkResponse
     /**
      * @return mixed
      */
-    public function getMeta(): mixed
+    public function getMeta()
     {
         return $this->meta;
     }

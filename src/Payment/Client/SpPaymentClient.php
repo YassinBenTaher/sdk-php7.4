@@ -4,6 +4,7 @@
 namespace Payment\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use http\Client;
+use Payment\Models\Payment\Domestic\SpCreateDomesticPaymentResponse;
 use Payment\Models\Payment\Domestic\SpDomesticPayment;
 use Payment\Models\Response\SpareSdkResponse;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
@@ -27,14 +28,22 @@ class SpPaymentClient implements ISpPaymentClient
     /**
      * @throws GuzzleException
      */
-    public function CreateDomesticPayment(SpDomesticPayment $payment)
+    public function CreateDomesticPayment(SpDomesticPayment $payment, string $signature): SpCreateDomesticPaymentResponse
     {
         $serializer = $this->GetSerializer();
         $client = new \GuzzleHttp\Client();
+        $headers = array('app-id' => $this->clientOptions->appId,
+            'x-api-key' => $this->clientOptions->appKey,
+            'Content-Type' => 'application/json',
+            'x-signature' => $signature);
         $request = new \GuzzleHttp\Psr7\Request('POST', $this->GetUrl(SpEndPoints::$CreateDomesticPayment),
-            $this->GetHeaders(), json_encode($payment));
-        $response = $serializer->deserialize($client->send($request)->getBody(), SpareSdkResponse::class, 'json');
-        return $response->getData();
+            $headers, json_encode($payment));
+        $response = $client->send($request);
+        $responseData = $serializer->deserialize($response->getBody(), SpareSdkResponse::class, 'json');
+        return new SpCreateDomesticPaymentResponse(
+            $responseData->getData(),
+            $response->getHeaderLine("x-signature")
+        );
     }
 
     /**
@@ -67,13 +76,13 @@ class SpPaymentClient implements ISpPaymentClient
 
     private function GetHeaders(): array {
         return array('app-id' => $this->clientOptions->appId,
-                     'x-api-key' => $this->clientOptions->appKey,
-                     'Content-Type' => 'application/json');
+            'x-api-key' => $this->clientOptions->appKey,
+            'Content-Type' => 'application/json');
     }
 
     private function GetSerializer(): Serializer
     {
-        $encoders = [new XmlEncoder(), new JsonEncoder()];
+        $encoders = [new JsonEncoder()];
         $normalizers = [new ObjectNormalizer()];
         return new Serializer($normalizers, $encoders);
     }

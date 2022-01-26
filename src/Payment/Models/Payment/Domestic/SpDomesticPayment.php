@@ -7,27 +7,27 @@ namespace Payment\Models\Payment\Domestic;
 
 class SpDomesticPayment
 {
-    public  int $amount;
+    public  float $amount;
     public  string $description;
 
-    function __construct(int $Amount, string $Description)
+    function __construct(float $amount, string $description)
     {
-        $this->amount = $Amount;
-        $this->description = $Description;
+        $this->amount = $amount;
+        $this->description = $description;
     }
 
     /**
-     * @return int
+     * @return float
      */
-    public function getAmount(): int
+    public function getAmount(): float
     {
         return $this->amount;
     }
 
     /**
-     * @param int $amount
+     * @param float $amount
      */
-    public function setAmount(int $amount): void
+    public function setAmount(float $amount): void
     {
         $this->amount = $amount;
     }
@@ -47,5 +47,4 @@ class SpDomesticPayment
     {
         $this->description = $description;
     }
-
 }
