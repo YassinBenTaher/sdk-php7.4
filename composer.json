@@ -14,14 +14,14 @@
         "php-http/curl-client": "^2.0@dev",
         "react/promise": "^2.8",
         "mashape/unirest-php": "dev-master",
-        "guzzlehttp/guzzle": "^6.3.3",
         "jms/serializer": "^3.12@dev",
         "starkbank/ecdsa": "dev-master",
         "querdos/php-ecdh": "dev-master",
         "simplito/elliptic-php": "1.0.7",
         "symfony/serializer": "^5.3.8",
         "symfony/property-access": "5.3.8",
-        "paragonie/easy-ecc": "dev-master"
+        "paragonie/easy-ecc": "dev-master",
+        "guzzlehttp/guzzle": "7.4.x-dev"
     },
     "config": {
         "preferred-install": "dist",

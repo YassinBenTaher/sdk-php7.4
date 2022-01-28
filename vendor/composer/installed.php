@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '3594a454df242ce29101c8ee2d9555526281a829',
+        'reference' => '071b639aab0dfa2004087a027ef31f0c690e61ae',
         'name' => 'method/php7-sdk',
         'dev' => true,
     ),
@@ -65,12 +65,14 @@
             'dev_requirement' => false,
         ),
         'guzzlehttp/guzzle' => array(
-            'pretty_version' => '6.5.x-dev',
-            'version' => '6.5.9999999.9999999-dev',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../guzzlehttp/guzzle',
-            'aliases' => array(),
-            'reference' => 'e8ed4dbf49b260ff129ff0e0400718c3269971bf',
+            'aliases' => array(
+                0 => '7.4.x-dev',
+            ),
+            'reference' => 'c1fd316f0a0f3325ed1e7cdbe61030418b868f9f',
             'dev_requirement' => false,
         ),
         'guzzlehttp/promises' => array(
@@ -141,7 +143,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '3594a454df242ce29101c8ee2d9555526281a829',
+            'reference' => '071b639aab0dfa2004087a027ef31f0c690e61ae',
             'dev_requirement' => false,
         ),
         'paragonie/constant_time_encoding' => array(
@@ -430,15 +432,6 @@
             'reference' => '81b86b50cf841a64252b439e738e97f4a34e2783',
             'dev_requirement' => false,
         ),
-        'symfony/polyfill-intl-idn' => array(
-            'pretty_version' => 'v1.24.0',
-            'version' => '1.24.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/polyfill-intl-idn',
-            'aliases' => array(),
-            'reference' => '749045c69efb97c70d25d7463abba812e91f3a44',
-            'dev_requirement' => false,
-        ),
         'symfony/polyfill-intl-normalizer' => array(
             'pretty_version' => 'v1.24.0',
             'version' => '1.24.0.0',
@@ -455,15 +448,6 @@
             'install_path' => __DIR__ . '/../symfony/polyfill-mbstring',
             'aliases' => array(),
             'reference' => '0abb51d2f102e00a4eefcf46ba7fec406d245825',
-            'dev_requirement' => false,
-        ),
-        'symfony/polyfill-php72' => array(
-            'pretty_version' => 'v1.24.0',
-            'version' => '1.24.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/polyfill-php72',
-            'aliases' => array(),
-            'reference' => '9a142215a36a3888e30d0a9eeea9766764e96976',
             'dev_requirement' => false,
         ),
         'symfony/polyfill-php73' => array(
